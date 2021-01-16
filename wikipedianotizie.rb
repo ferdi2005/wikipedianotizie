@@ -87,5 +87,5 @@ end
 list.push(contenutofinale)
 
 # Salvo sulla pagina apposita di Wikipedia
-wikipedia.edit(title: "Utente:Ferdi2005/Sandbox", text: list.join("\n"), summary: "Aggiorno articoli da Wikinotizie")
+wikipedia.edit(title: "Template:Pagina_principale/Notizie/Auto", text: list.join("\n"), summary: "Aggiorno articoli da Wikinotizie.")
 puts "Salvataggio riuscito!"
