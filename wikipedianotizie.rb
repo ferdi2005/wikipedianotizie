@@ -36,7 +36,7 @@ wikipedia = MediawikiApi::Client.new 'https://it.wikipedia.org/w/api.php'
 # Faccio il login su Wikipedia
 wikipedia.log_in "#{userdata[0].gsub("\n", "")}", "#{userdata[1].gsub("\n", "")}"
 
-pubblicati = wikinotizie.query(list: :categorymembers, cmtitle: "Categoria:Pubblicati", cmsort: :timestamp, cmdir: :desc, cmlimit: 50)["query"]["categorymembers"]
+pubblicati = wikinotizie.query(list: :categorymembers, cmtitle: "Categoria:Pubblicati", cmsort: :timestamp, cmdir: :desc, cmlimit: :max)["query"]["categorymembers"]
 
 # Rigetto cose non nel ns0 (eventuali errori)
 pubblicati.reject! { |pubblicato| pubblicato["ns"] != 0 }
