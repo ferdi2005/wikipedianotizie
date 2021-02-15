@@ -1,6 +1,3 @@
-<div style="text-align:center; margin:auto; border:2px solid red; border-radius:10px; width:300px; margin-top:.5em;">
-<span style="font-size:larger; font-family:verdana;">[[n:Elezioni presidenziali statunitensi 2020|{{Colore|red|Speciale elezioni USA 2020}}]]</span>
-</div>
 <div style="margin-top:.6em; font-size:90%; text-align:center; padding-top:7px;">
 [[File:Speciale COVID19 3rd.jpg|300px|senza_cornice|centro|link=n:Speciale COVID-19]]
 '''Accedi allo [[:n:Speciale COVID-19|speciale dedicato alla pandemia in corso]] per trovare tutti gli articoli relativi'''
