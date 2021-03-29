@@ -44,7 +44,6 @@ pubblicati.reject! { |pubblicato| pubblicato["ns"] != 0 }
 # Per ogni articolo ottengo il contenuto
 pubblicati.map do |pubblicato|
     content = wikinotizie.query(prop: :revisions, rvprop: :content, titles: pubblicato["title"], rvlimit: 1)["query"]["pages"]["#{pubblicato["pageid"]}"]["revisions"][0]["*"]
-    byebug if content.nil?
     # Processo il contenuto con la gem Wikinotizie
     # content = [content, match, data, giorno, rubydate, with_luogo, luogo]
     parsed = Wikinotizie.parse(content)
